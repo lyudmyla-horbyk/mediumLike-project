@@ -3,6 +3,9 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     less: {
       dev: {
+        options :{
+          sourceMap:true
+        },
         files : {
           'css/compiled.css': 'css/style.less'
         }
